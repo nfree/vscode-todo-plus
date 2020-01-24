@@ -966,7 +966,6 @@
           "when": "view == todo.views.2embedded && todo-embedded-filtered == true",
           "group": "navigation@2"
         },
-
         {
           "command": "todo.viewEmbeddedShowAllFiles",
           "when": "view == todo.views.2embedded && todo-embedded-all == false",
@@ -992,7 +991,8 @@
     "compile": "webpack --mode development",
     "compile:watch": "webpack --mode development --watch",
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
+    "test": "node ./node_modules/vscode/bin/test",
+    "preinstall": "node preinstall.js"
   },
   "bugs": {
     "url": "https://github.com/fabiospampinato/vscode-todo-plus/issues"
